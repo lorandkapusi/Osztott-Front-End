@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Személyes Adatok</h1>
+
+<form action="" onsubmit="submitFunction()" method="">
+    <fieldset>
+        <legend>Űrlap:</legend>
+
+        <label for="fname"><b>Családnév:</b></label>
+        <input type="text" id="name1" name="name" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
+        <label for="lname"><b>Keresztnév:</b></label>
+        <input type="text" id="name2" name="name" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
+
+        <label for="age"><b>Életkor:</b></label>
+        <input type="number" id="age" name="age"min="18" max="99"step="1" required><br><br>
+
+        <label for="county"><b>Megye:</b></label>
+        <select id="county">
+            <option value="Maros" >Maros</option>
+            <option value="Kovaszna">Kovászna</option>
+            <option value="Kolozs">Kolozs</option>
+            <option value="Feher">Fehér</option>
+            <option value="Hargita" >Hargita</option>
+        </select><br><br>
+        <label for="city"><b>Város:</b></label>
+        <input type="text" id="city" name="city" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
+        
+        
+        <label for="postalcode"><b>Postai irányítószám:</b></b></label>
+        <input type="text" id="postalcode" name="postalcode" placeholder="123456" pattern="[0-9]{6}" required><br><br>
+
+        <label for="phone"><b>Telefonszám:</b></b></label>
+        <input type="tel" id="phone" name="phone" placeholder="0712345678" pattern="[0]{1}[7]{1}[0-9]{8}" required><br><br>
+
+
+        <label for="gender"><b>Nem: </b></label><br>
+        <input type="radio" name="gender" id="male" value="male">Férfi<br>
+        <input type="radio" name="gender" id="female" value="female">Nő<br><br>
+
+        <label for="Fstatus"><b>Családi Állapot:</b></label>
+        <select id="Fstatus">
+            <option value="Egyedulallo" >Egyedülálló</option>
+            <option value="Hazas">Házas</option>
+        </select><br><br>
+        
+        <label for="ok"><b>Elfogadom az oldal használatának feltételeit: </b></label>
+        <input type="checkbox" name="ok" id="ok" value="ok">
+        <style>
+            #ok {
+                    zoom: 1;
+                    transform: scale(2);
+                    -ms-transform: scale(2);
+                    -webkit-transform: scale(2);
+                    -o-transform: scale(2);
+                    -moz-transform: scale(2);
+                    transform-origin: 0 0;
+                    -ms-transform-origin: 0 0;
+                    -webkit-transform-origin: 0 0;
+                    -o-transform-origin: 0 0;
+                    -moz-transform-origin: 0 0;
+                    }
+        </style><br><br>
+      <input type="submit" value="Ellenőrzés">
+
+
+    </fieldset>
+</form>
+    <script>
+        
+    </script>
+
+
+</body>
+</html>
