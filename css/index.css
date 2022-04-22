@@ -1,0 +1,54 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    transition: 1s;
+}
+nav a{
+    margin-right: 4rem;
+    color: black !important;
+}
+nav .navbar-brand{
+    margin-left: 5rem;
+}
+.main{
+    height: 87.5vh;
+}
+.navbar-custom{
+    height: 12.5vh;
+}
+.container-fluid{
+    background-image: url(../backround.jpg);
+    clip-path: ellipse(75% 95% at 50% 0%);
+    background-size: cover;
+
+    animation: loadIn 2s;
+}
+
+@keyframes loadIn {
+    from {
+        clip-path: ellipse(50% 15% at 50% 0%);
+    }
+    to {
+        clip-path: ellipse(75% 95% at 50% 0%);
+    }
+  }
+.main h1 {
+    color: black;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+hr{
+    height: 3px !important;
+    width: 130px;
+    text-align: center;
+    position: relative;
+    background: #6aaf08;
+    margin: 1rem auto !important;
+    margin-bottom: 20px;
+    border: 0;
+}
