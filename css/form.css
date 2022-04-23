@@ -1,0 +1,102 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    transition: 1s;
+}
+nav a{
+    margin-right: 4rem;
+    color: black !important;
+}
+nav .navbar-brand{
+    margin-left: 5rem;
+}
+@media only screen and (min-width: 575px) {
+    .navbar-custom{
+        height: 12.5vh;
+    }
+  } 
+
+body{
+
+    background-image: url(../imgs/backround.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.mainForm{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 1rem;
+}
+hr{
+    height: 3px !important;
+    width: 130px;
+    text-align: center;
+    position: relative;
+    background: #6aaf08;
+    margin: 1rem auto !important;
+    margin-bottom: 20px;
+    border: 0;
+}
+.sendButton {
+  margin: 1rem auto;
+  width: auto !important;
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sendButton:hover,
+.sendButton:focus {
+  opacity: .75;
+}
+
+@media only screen and (max-width: 991px) {
+    div[class*="col"]{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+  }
+
+@media only screen and (min-width: 1090px) {
+    .container-lg{
+        max-width: 60% !important;
+    }
+    
+  } 
+input {
+    outline:none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(172, 226, 248);
+    box-shadow: rgb(195, 217, 235) 0px 0px 8px;
+}
+input:focus{
+    box-shadow: rgb(44, 105, 115) 0px 0px 8px;
+}
+
