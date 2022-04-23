@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    transition: 1s;
+}
+nav a{
+    margin-right: 4rem;
+    color: black !important;
+}
+nav .navbar-brand{
+    margin-left: 5rem;
+}
+.main{
+    height: 87.5vh;
+}
+@media only screen and (min-width: 575px) {
+    .navbar-custom{
+        height: 12.5vh;
+    }
+  } 
+
+@media only screen and (min-width: 800px) {
+    div[class*="container"]{
+        width: 70% !important;
+    }
+  } 
+body{
+    background-image: url(../imgs/backround.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+/* canvas{
+    width: 100% !important;
+    height: 100% !important;
+} */
+div[class*="container"]{
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255,0.8);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
