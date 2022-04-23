@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+   
+    <meta charset="utf-8">
+    <title>Bejelentkezés</title>
+    <script src="login.js"></script>
+    <script src="utils.js"></script>
+    <style type="text/css">
+    
+        .format {
+            display: block;
+            position: relative;
+            margin: 0.5em;
+        }    
+       
+        #passwd_err {
+            display: none;
+            color: red;
+        }
+
+        #email_err {
+            display: none;
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="tarto">
+        <p id="hiba">&nbsp;</p>
+        <form id="urlap" action="" method="POST">
+            <h1>Bejelentkezés</h1>
+            <span class="format">
+                <label>E-mail:
+                    <input type="text" name="email" value="">
+                    <span id="email_err">Hibás e-mail cím!</span>
+                </label>
+            </span>
+
+            <span class="format">
+                <label>Jelszó:
+                    <input type="password" name="password" value="">
+                    <span id="passwd_err">Hibás jelszó!</span>
+                </label>
+            </span>
+
+            <span class="format">
+                <input type="submit" name="submit" value="Bejelentkezés">
+            </span>
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
