@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    transition: 1s;
+}
+nav a{
+    margin-right: 4rem;
+    color: black !important;
+}
+nav .navbar-brand{
+    margin-left: 5rem;
+}
+.main{
+    height: 87.5vh;
+}
+@media only screen and (min-width: 575px) {
+    .navbar-custom{
+        height: 12.5vh;
+    }
+  } 
+body{
+    background-image: url(../imgs/backround.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 800px) {
+    div[class*="container"]{
+        width: 30% !important;
+    }
+  } 
+
+  @media only screen and (max-width: 800px) {
+    div[class*="container"]{
+        width: 60% !important;
+    }
+  } 
+  div[class*="container"]{
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255,0.8);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+div[class*="container"] a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0px 5px;
+    color: black !important;
+    /* border-radius: 40px; */
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    outline:none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(172, 226, 248);
+    box-shadow: rgb(195, 217, 235) 0px 0px 8px;
+}
+
+hr{
+    height: 3px !important;
+    width: 130px;
+    text-align: center;
+    position: relative;
+    background: #6aaf08;
+    margin: 1rem auto !important;
+    margin-bottom: 20px;
+    border: 0;
+}
+input {
+    outline:none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(172, 226, 248);
+    box-shadow: rgb(195, 217, 235) 0px 0px 8px;
+}
+#passwd_err {
+    display: none;
+    color: red;
+}
+
+#email_err {
+    display: none;
+    color: red;
+}
+#fname_err {
+    display: none;
+    color: red;
+}
+#lname_err {
+    display: none;
+    color: red;
+}
+
+#age_err {
+    display: none;
+    color: red;
+}
+#gender_err {
+    display: none;
+    color: red;
