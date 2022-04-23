@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+
 *{
-    font-family: sans-serif;
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,7 +30,7 @@ body{
 }
 .mainForm{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255,0.8);
     border-radius: 10px;
     padding: 1rem;
 }

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+
 *{
-    font-family: sans-serif;
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,7 +26,7 @@ nav .navbar-brand{
   } 
 .container-fluid{
     background-image: url(../imgs/backround.jpg);
-    clip-path: ellipse(75% 95% at 50% 0%);
+    clip-path: ellipse(75% 100% at 50% 0%);
     background-size: cover;
     
     animation: loadIn 2s;
@@ -35,7 +37,7 @@ nav .navbar-brand{
         clip-path: ellipse(50% 15% at 50% 0%);
     }
     to {
-        clip-path: ellipse(75% 95% at 50% 0%);
+        clip-path: ellipse(75% 100% at 50% 0%);
     }
   }
 .main h1 {
