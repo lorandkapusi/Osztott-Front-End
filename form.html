@@ -1,132 +1,89 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/form.css">
-	<title>Document</title>
-</head>
+<html>
 <body>
 
+<h1>Személyes Adatok</h1>
 
-        <nav class="navbar navbar-expand-sm navbar-light navbar-custom">
-			<a href="#" class="navbar-brand">SzámA</a>
+<form action="" onsubmit="submitFunction()" method="">
+    <fieldset>
+        <legend>Űrlap:</legend>
 
-		<button
-			class="navbar-toggler"
-			type="button"
-			data-bs-toggle="collapse"
-			data-bs-target="#toggleMobileMenu"
-			aria-controls="toggleMobileMenu"
-			aria-expanded="false"
-			aria-lable="Toggle navigation"
-			>
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		
-			<div class="collapse navbar-collapse" id="toggleMobileMenu">
-				<ul class="navbar-nav ms-auto text-center">
-						<li >
-							<a class="nav-link nav-active" href="./index.html">Home
-							</a>
-						</li>
-						<li >
-							<a class="nav-link" href="./produce.html">Results</a>
-						</li>
-				</ul>
-			</div>
-		</nav>
+        <label for="fname"><b>Családnév:</b></label>
+        <input type="text" id="name1" name="name" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
+        <label for="lname"><b>Keresztnév:</b></label>
+        <input type="text" id="name2" name="name" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
+
+        <label for="age"><b>Életkor:</b></label>
+        <input type="number" id="age" name="age"min="18" max="99"step="1" required><br><br>
+
+        <label for="cnp"><b>Személyi szám:</b></b></label>
+        <input type="text" id="cnp" name="cnp" placeholder="5220409068014" pattern="[0-9]{13}" required><br><br>
+
+        <label for="county"><b>Megye:</b></label>
+        <select id="county">
+            <option value="Maros" >Maros</option>
+            <option value="Kovaszna">Kovászna</option>
+            <option value="Kolozs">Kolozs</option>
+            <option value="Feher">Fehér</option>
+            <option value="Hargita" >Hargita</option>
+        </select><br><br>
+        <label for="city"><b>Város:</b></label>
+        <input type="text" id="city" name="city" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
         
-    <div class="container-lg">
+        
+        <label for="postalcode"><b>Postai irányítószám:</b></b></label>
+        <input type="text" id="postalcode" name="postalcode" placeholder="123456" pattern="[0-9]{6}" required><br><br>
 
-        <div class="row mainForm mx-auto">
-            <div class="col">
-                <h1 class="text-center">Személyes Adatok</h1>
-                <hr>
-                <br>
-                    <form action="" onsubmit="submitFunction()" method="">
-                        <fieldset>
-                            <div class="row justify-content-center  text-center forms">
-                                <div class="col-lg-4">
-                                    <label for="fname"><b>Családnév:</b></label><br>
-                                    <input type="text" id="name1" name="name" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
-                                    <label for="lname"><b>Keresztnév:</b></label><br>
-                                    <input type="text" id="name2" name="name" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
-
-                                    <label for="age"><b>Életkor:</b></label><br>
-                                    <input type="number" id="age" name="age"min="18" max="99"step="1" required><br><br>
-
-                                    <label for="county"><b>Megye:</b></label>
-                                    <select id="county">
-                                        <option value="Maros" >Maros</option>
-                                        <option value="Kovaszna">Kovászna</option>
-                                        <option value="Kolozs">Kolozs</option>
-                                        <option value="Feher">Fehér</option>
-                                        <option value="Hargita" >Hargita</option>
-                                    </select><br><br>
-                                    <label for="city"><b>Város:</b></label><br>
-    
-                                    <input type="text" id="city" name="city" pattern="^[A-Z][a-zA-Z]*$" required><br><br>
-                                </div>
-                                <div class="col-lg-4">
-                                    
-                                    <label for="postalcode"><b>Postai irányítószám:</b></b></label><br>
-                                    <input type="text" id="postalcode" name="postalcode" placeholder="123456" pattern="[0-9]{6}" required><br><br>
-
-                                    <label for="phone"><b>Telefonszám:</b></b></label><br>
-                                    <input type="tel" id="phone" name="phone" placeholder="0712345678" pattern="[0]{1}[7]{1}[0-9]{8}" required><br><br>
+        <label for="phone"><b>Telefonszám:</b></b></label>
+        <input type="tel" id="phone" name="phone" placeholder="0712345678" pattern="[0]{1}[7]{1}[0-9]{8}" required><br><br>
 
 
-                                    <label for="gender"><b>Nem: </b></label>
-                                    <input type="radio" name="gender" id="male" value="male">Férfi
-                                    <input type="radio" name="gender" id="female" value="female">Nő<br><br>
+        <label for="gender"><b>Nem: </b></label><br>
+        <input type="radio" name="gender" id="male" value="male">Férfi<br>
+        <input type="radio" name="gender" id="female" value="female">Nő<br><br>
 
-                                    <label for="Fstatus"><b>Családi Állapot:</b></label><br>
-                                    <select id="Fstatus">
-                                        <option value="Egyedulallo" >Egyedülálló</option>
-                                        <option value="Hazas">Házas</option>
-                                    </select><br><br>
-                                    
+        <label for="Fstatus"><b>Családi Állapot:</b></label>
+        <select id="Fstatus">
+            <option value="Egyedulallo" >Egyedülálló</option>
+            <option value="Hazas">Házas</option>
+        </select><br><br>
 
-                                    <style>
-                                        #ok {
-                                                zoom: 1;
-                                                transform: scale(2);
-                                                -ms-transform: scale(2);
-                                                -webkit-transform: scale(2);
-                                                -o-transform: scale(2);
-                                                -moz-transform: scale(2);
-                                                transform-origin: 0 0;
-                                                -ms-transform-origin: 0 0;
-                                                -webkit-transform-origin: 0 0;
-                                                -o-transform-origin: 0 0;
-                                                -moz-transform-origin: 0 0;
-                                                }
-                                    </style><br><br>
-                                </div>
-                            </div>
-                            <div class="row text-center">
-                                <label for="ok"><b>Elfogadom az oldal használatának feltételeit: </b>
-                                    <input type="checkbox" name="ok" id="ok" value="ok">
-                                </label>
-                                <br>
-                                <br>
-                                <!-- <input class="btn" type="submit" value="Ellenőrzés"> -->
-                                <button class="sendButton" type="submit">Ellenőrzés</button>
-                            </div>
+        <label for="vote"><b>Pártok:</b></label>
+        <select id="vote">
+            <option value="fidesz" >FIDESZ-KDNP</option>
+            <option value="mh">Mi Hazánk</option>
+             <option value="memo">Megoldás Mozgalom</option>
+            <option value="mkkp">Magyar Kétfarkú Kutyapárt</option>
+             <option value="normalis" >Normális Párt</option>
+            <option value="dkjobbik">DK-Jobbik-Momentum-MSZP-LMP-Párbeszéd</option>
+        </select><br><br>
+        
+        <label for="ok"><b>Elfogadom az oldal használatának feltételeit: </b></label>
+        <input type="checkbox" name="ok" id="ok" value="ok">
+        <style>
+            #ok {
+                    zoom: 1;
+                    transform: scale(2);
+                    -ms-transform: scale(2);
+                    -webkit-transform: scale(2);
+                    -o-transform: scale(2);
+                    -moz-transform: scale(2);
+                    transform-origin: 0 0;
+                    -ms-transform-origin: 0 0;
+                    -webkit-transform-origin: 0 0;
+                    -o-transform-origin: 0 0;
+                    -moz-transform-origin: 0 0;
+                    }
+        </style><br><br>
+      <input type="submit" value="Ellenőrzés">
 
-                        </fieldset>
-                </form>
-            </div>
-        </div>
-    </div>
+
+    </fieldset>
+</form>
     <script>
         
     </script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
