@@ -31,13 +31,27 @@ nav .navbar-brand{
     
     animation: loadIn 2s;
 }
-
+.loadIn{
+    animation: loadIn 2s;
+}
+.loadOut{
+    animation: loadOut 1.5s;
+    clip-path: ellipse(50% 15% at 50% 0%);
+}
 @keyframes loadIn {
     from {
         clip-path: ellipse(50% 15% at 50% 0%);
     }
     to {
         clip-path: ellipse(75% 100% at 50% 0%);
+    }
+  }
+  @keyframes loadOut {
+    from {
+        clip-path: ellipse(75% 100% at 50% 0%);
+    }
+    to {
+        clip-path: ellipse(50% 15% at 50% 0%);
     }
   }
 .main h1 {
@@ -87,3 +101,20 @@ hr{
     color: rgb(180, 180, 180);
     background: rgb(26, 26, 26);
 }
+
+@keyframes LoadInFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+@keyframes LoadOutFade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }

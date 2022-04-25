@@ -13,6 +13,10 @@ nav a{
     margin-right: 4rem;
     color: black !important;
 }
+body{
+    /* background-color: #fff; */
+    animation: LoadInFade 1.5s;
+}
 nav .navbar-brand{
     margin-left: 5rem;
 }
@@ -45,3 +49,21 @@ div[class*="container"]{
     background-color: rgba(240, 248, 255,0.8);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+@keyframes LoadInFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+@keyframes LoadOutFade {
+    from {
+
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }

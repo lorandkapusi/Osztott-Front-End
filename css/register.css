@@ -16,6 +16,17 @@ nav a{
 nav .navbar-brand{
     margin-left: 5rem;
 }
+body{
+    animation: LoadInFade 1.5s;
+}
+@keyframes LoadInFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
 .main{
     height: 87.5vh;
 }

@@ -13,6 +13,17 @@ nav a{
     margin-right: 4rem;
     color: black !important;
 }
+body{
+    animation: LoadInFade 1.5s;
+}
+@keyframes LoadInFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
 nav .navbar-brand{
     margin-left: 5rem;
 }
