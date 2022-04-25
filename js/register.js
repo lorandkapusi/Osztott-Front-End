@@ -15,6 +15,13 @@ function checkLastName(mezo) {
        $("lname_err").style.display = "inline";
      }
    }
+   function checkUserName(mezo) {
+    var re=/^[a-zA-Z0-9]+$/;
+     if (!re.test(mezo.value)) {
+       error.push(mezo.name);
+       $("user_err").style.display = "inline";
+     }
+   }
 
    function checkEmail(mezo) {
     var re = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
@@ -60,8 +67,9 @@ function setError(errlist) {
     for (var name in fun) {
       form[name].nextElementSibling.style.color = "inherit";
     }
-    $("fname_err").style.display = "none";
-    $("lname_err").style.display = "none";
+    //$("fname_err").style.display = "none";
+    //$("lname_err").style.display = "none";
+    $("user_err").style.display = "none";
     $("email_err").style.display = "none";
     $("passwd_err").style.display = "none";
     $("age_err").style.display = "none";
@@ -69,8 +77,9 @@ function setError(errlist) {
   
   var fun = {
 
-    fname: checkFirstName,
-    lname: checkLastName,
+    //fname: checkFirstName,
+    //lname: checkLastName,
+    username:checkUserName,
     email: checkEmail,
     password: checkPassword,
     age: checkAge,
