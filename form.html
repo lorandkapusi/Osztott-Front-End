@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/form.css">
+	<link rel="stylesheet" href="./css/form.css">
 	<title>Document</title>
 </head>
 <body>
@@ -43,7 +43,7 @@
 
         <div class="row mainForm mx-auto">
             <div class="col">
-                <h1 class="text-center">Személyes Adatok</h1>
+                <h1 class="text-center">Szavazólap</h1>
                 <hr>
                 <br>
                     <form action="" onsubmit="submitFunction()" method="">
@@ -57,6 +57,9 @@
 
                                     <label for="age"><b>Életkor:</b></label><br>
                                     <input type="number" id="age" name="age"min="18" max="99"step="1" required><br><br>
+                                    
+                                    <label for="cnp"><b>Személyi szám:</b></b></label>
+                                    <input type="text" id="cnp" name="cnp" placeholder="5220409068014" pattern="[0-9]{13}" required><br><br>
 
                                     <label for="county"><b>Megye:</b></label>
                                     <select id="county">
@@ -89,6 +92,15 @@
                                         <option value="Hazas">Házas</option>
                                     </select><br><br>
                                     
+                                      <label for="vote"><b>Pártok:</b></label>
+                                     <select id="vote">
+                                           <option value="fidesz" >FIDESZ-KDNP</option>
+                                           <option value="mh">Mi Hazánk</option>
+                                           <option value="memo">Megoldás Mozgalom</option>
+                                           <option value="mkkp">Magyar Kétfarkú Kutyapárt</option>
+                                           <option value="normalis" >Normális Párt</option>
+                                           <option value="dkjobbik">DK-Jobbik-Momentum-MSZP-LMP-Párbeszéd</option>
+                                    </select><br><br>
 
                                     <style>
                                         #ok {

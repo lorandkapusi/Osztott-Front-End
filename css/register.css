@@ -112,6 +112,11 @@ input {
     color: red;
 }
 
+#user_err {
+    display: none;
+    color: red;
+}
+
 #age_err {
     display: none;
     color: red;
