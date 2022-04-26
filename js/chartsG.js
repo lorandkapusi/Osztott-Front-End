@@ -18,25 +18,85 @@ function randomColorGenerator(numberOfData){
 
 randomColorGenerator(5);
 
-const data = {
-  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-  datasets: [{
-    label: 'Results',
-    data: [18, 12, 6, 9, 12, 3, 9],
-    backgroundColor: colors,
-    borderColor: borderColors,
-    borderWidth: 1
-  }]
-};
+// const data = {
+//   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+//   datasets: [{
+//     label: 'Results',
+//     data: [18, 12, 6, 9, 12, 3, 9],
+//     backgroundColor: colors,
+//     borderColor: borderColors,
+//     borderWidth: 1
+//   }]
+// };
+
+// {
+//   labels: json.map(x => x.Nev),
+//   datasets: [
+//     {
+//       label: "Szavazasi eredmények",
+//       data: json.map(x => x.Szavazastok),
+//       backgroundColor: colors,
+//       borderColor: borderColors,
+//       borderWidth: 1
+//     }
+//   ]
 
 
-const config = {
-  type: 'bar',
-  data,
-  options: {
-    indexAxis: 'y',
+// const config = {
+//   type: 'bar',
+//   data,
+//   options: {
+//     indexAxis: 'y',
+//   }
+// };
+
+
+// const myChart = new Chart(barChart, config);
+
+const userAction = async () => {
+  const response = await fetch('http://example.com/movies.json');
+  const myJson = await response.json(); //extract JSON from the http response
+  // do something with myJson
+}
+
+let json =
+   [
+   {
+    "Nev":"Fidesz",
+    "Szavazastok":2555
+   },
+   {
+    "Nev":"DK",
+    "Szavazastok":345
+   },
+   {
+    "Nev":"Kutya",
+    "Szavazastok":123
+   },
+   ]
+
+
+
+
+new Chart(document.getElementById("bar-chart"), {
+type: 'bar',
+data: {
+  labels: json.map(x => x.Nev),
+  datasets: [
+    {
+      label: "Szavazasi eredmények",
+      data: json.map(x => x.Szavazastok),
+      backgroundColor: colors,
+     borderColor: borderColors,
+     borderWidth: 1
+    }
+  ]
+},
+options: {
+  legend: { display: true },
+  title: {
+    display: true,
+    text: 'Eredmények'
   }
-};
-
-
-const myChart = new Chart(barChart, config);
+}
+});
