@@ -62,9 +62,14 @@ function setError(errlist) {
      
       setError(error);
       e.preventDefault(); 
+      return false
     }
+
+    window.location = "./form.html";
     return true;
+
   }
+
   //inicializálás
   window.onload = function () {
     $("urlap").addEventListener("submit", checkForm, true);
